@@ -1,0 +1,79 @@
+<html>
+
+<head>
+	<title> Web programming 4</title>
+</head>
+
+<body>
+	<p>Задание 4</p>
+	<p>Создать веб-страницу с веб-формой, содержащей элементы управления в соответствии с вариантом. Предусмотреть проверку корректности данных. Обязательно должна быть кнопка, очищающая данные формы</p>
+	<p>Вариант 17</p>
+	<p>Данные о книге в интернет-магазине: выходные данные книги (авторы, название, издательство, город, год, количество страниц), раздел библиотеки (специальная литература, домашнее хозяйство и др.),наличие книги в данный момент, субъективная оценка книги</p>
+
+	<form>
+		<fieldset>
+			<legend>Books Shop</legend>
+			Автор:
+			<br/>
+			<input type="text" name="autor" size="15" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="required" />
+			<br/>
+			<br/>
+
+			Название:
+			<br/>
+			<input type="text" name="imya" size="15" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="required"/>
+			<br/>
+			<br/>
+
+			Издательство:
+			<br/>
+			<input type="text" name="publishing" size="15" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="required"/>
+			<br/>
+			<br/>
+
+			Город:
+			<br/>
+			<input type="text" name="city" size="15" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required="required"/>
+			<br/>
+			<br/>
+
+			Год:
+			<br/>
+			<input type="number" name="year" size="15" min=1 max=2020 pattern="[0-9]{,4}" required />
+			<br/>
+			<br/>
+
+			Кол-во страниц:
+			<br/>
+			<input type="number" name="year" size="15" min=1 required="required"/>
+			<br/>
+			<br/>
+
+			Раздел библиотеки:
+			<br/>
+			<select name="library">
+				<option value="select">выбрать</option>
+				<option value="special literature">Специальная литература</option>
+				<option value="household">Домашнее хозяйство</option>
+				<option value="biography">Биография</option>
+			</select>
+			<br/>
+			<br/>
+
+			Наличие:
+			<input type="checkbox" name="yes"/> есть
+			<br/>
+
+			<br/>
+			<textarea name="comments" cols="30" rows="4">Отзыв о книге... </textarea>
+
+		</fieldset>
+
+		<input type="reset">
+		<input type="submit" name="subscribe" value="Загрузить"/>
+	</form>
+
+
+
+</body>
+</html>
